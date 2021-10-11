@@ -3,7 +3,7 @@ import Propsreciever from './Propsreciever' //have to import the component wher 
 
 //Parent
 export default function Sendingprops() {
-    const functioninparent=(textfromchild)=>{
+    const functioninparent=(textfromchild)=>{//text recieved here is the argument set for this parameter "textfromchild" in child;
     document.getElementById("fromchild").innerText=textfromchild;
     }
     return (
