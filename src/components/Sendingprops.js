@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Propsreciever from './Propsreciever' //have to import the component wher you want to send the data
 
 //Parent
-export default function Sendingprops() {
+ function Sendingprops() {
+     const[state,setState]=useState();
     const functioninparent=(textfromchild)=>{//text recieved here is the argument set for this parameter "textfromchild" in child;
-    document.getElementById("fromchild").innerText=textfromchild;
+    
+     setState(textfromchild)
     }
+       
+  
     return (
         <>
         
         <Propsreciever idd="from parent to child" func={functioninparent}></Propsreciever> 
         {/* idd is a prop sent to a component named props reciever */}
-        <p id="fromchild"></p>
+        
+        <p >{state}</p>
         </>
         )
-}
+}export default Sendingprops;
