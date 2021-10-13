@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 import Propsreciever from './components/Propsreciever';
 import Sendingprops from './components/Sendingprops';
+import UseRefuseEffect from './components/UseRefuseEffect';
 // import LogIn from './components/LogIn';
 
 function App (){
@@ -12,7 +13,9 @@ function App (){
  
         return (
             <div className="App">
-       <Sendingprops/>
+               
+       <Sendingprops/> 
+       <UseRefuseEffect/>
     </div>
           
     );
