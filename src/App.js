@@ -15,7 +15,7 @@ function App (){
             <div className="App">
                
        <Sendingprops/> 
-       <UseRefuseEffect/>
+       <UseRefuseEffect class="useName"/>
     </div>
           
     );
